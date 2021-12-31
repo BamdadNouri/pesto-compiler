@@ -119,7 +119,7 @@ func testPrefix() {
 	).ParseProgram()
 
 	if len(program.Statements) != 1 {
-		fmt.Println("test fail in testLet")
+		fmt.Println("test fail in testPrefix")
 	}
 	fmt.Println("statement:", program.Statements[0].String())
 	fmt.Println("operator:", program.Statements[0].(*ExpressionStatement).Expression.(*PrefixExpression).Operator)
@@ -134,7 +134,7 @@ func testInfix() {
 	).ParseProgram()
 
 	if len(program.Statements) == 0 {
-		fmt.Println("test fail in testLet")
+		fmt.Println("test fail in testInfix")
 	}
 	fmt.Println("statement:", program.Statements[0].String())
 	fmt.Println("left value:", program.Statements[0].(*ExpressionStatement).Expression.(*InfixExpression).Left)
@@ -150,7 +150,7 @@ func testBool() {
 	).ParseProgram()
 
 	if len(program.Statements) != 1 {
-		fmt.Println("test fail in testLet")
+		fmt.Println("test fail in testBool")
 	}
 	fmt.Println("statement:", program.Statements[0].String())
 	fmt.Println("value:", program.Statements[0].(*ExpressionStatement).Expression.(*Boolean).Value)
@@ -164,7 +164,7 @@ func testIf() {
 	).ParseProgram()
 
 	if len(program.Statements) != 1 {
-		fmt.Println("test fail in testLet")
+		fmt.Println("test fail in testIf")
 	}
 	fmt.Println("statement:", program.Statements[0].String())
 	fmt.Println("condition:", program.Statements[0].(*ExpressionStatement).Expression.(*IfExpression).Condition)
