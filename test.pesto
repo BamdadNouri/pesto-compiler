@@ -1,1 +1,5 @@
-let a = 4;
+let x = 10;
+!true;
+4 * 8;
+true;
+if (x == y) { x };
