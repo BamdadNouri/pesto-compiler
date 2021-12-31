@@ -2,7 +2,7 @@
 This is a tiny compiler just to learn how compilers work. It takes a `*.pesto` file and runs multiple stages of compiler.
 
 This compiler does Laxer and Parser. It first read the input program, then Laxers breaks down the code and make chunkes called Tokens.
-Tokens are objects representing what each peace of code do. [EXAMPLE].
+Tokens are objects representing what each peace of code do.
 Then it's sent to Parser. Parser takes tokens and verifies them. Parser, parses the token list to Statements. Each statement has a Token, which is it's token with a Type and a Literal (like a `let` which has a LET type and a "let" literal), a Name, which is a identifier, that means it has a Token and a Value.
 
 ## How to use
